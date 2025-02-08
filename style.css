@@ -22,7 +22,7 @@ body {
     font-weight: 550;
     padding: 8px 20px;
     transition: color 0.3s ease, transform 0.3s ease;
-    margin: 0px 40px;
+    margin: 0px 35px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -203,7 +203,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-
+.card.column.hovered {
+    transform: scale(1.05);
+    background-color: #ebecee; 
+    color: white;}
 .row .col-md-6 {
     margin-bottom: 30px;
 }
@@ -211,7 +214,15 @@ body {
     max-width: 400px; 
     margin: 0 auto; 
 }
-
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
 @media (max-width: 768px) {
     #home h1 {
         font-size: 40px;
