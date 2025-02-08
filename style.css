@@ -1,0 +1,639 @@
+Global Styles
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 8px 20px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for zoom */
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(40, 104, 154); /* Change color on hover */
+    transform: scale(1.1); /* Add zoom effect */
+    border-radius: 6px;
+}
+
+.navbar-toggler {
+    border-color: #ddd;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+}
+
+/* Home Section */
+#home {
+    width: 100vw; /* Full viewport width */
+    background-color: #272727;
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0; /* Remove border-radius for full width */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove padding to ensure full width */
+}
+
+#home .row {
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 59px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#home h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(40, 104, 154); /* Changed to green */
+    margin-bottom: 40px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#home img:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.btn-primary {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+
+#about h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#about p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h3 {
+        font-size: 20px;
+    }
+
+    #home img {
+        max-width: 80%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #home {
+        text-align: center;
+    }
+
+    #home h1, #home h3 {
+        text-align: center;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 0;
+    }
+}
+
+
+
+#education h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+   
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+  
+}
+
+
+
+/* Image takes a bigger part of the card */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Bigger height to make the image more prominent */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Spacing between cards */
+.row .col-md-6 {
+    margin-bottom: 30px;
+}
+
+/* Smaller card layout */
+.col-md-6 {
+    max-width: 400px; /* Control the size of the cards */
+    margin: 0 auto; /* Center the cards in their column */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h3 {
+        font-size: 20px;
+    }
+
+    #home img {
+        max-width: 80%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .col-md-6 {
+        max-width: 100%; /* Make cards full-width on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    #home {
+        text-align: center;
+    }
+
+    #home h1, #home h3 {
+        text-align: center;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 0;
+    }
+}
+.services-hd{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* General Styles */
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+}
+
+.projects-hd {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    margin: 5px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .card-body {
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.project-card .card-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card .card-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 9px;
+}
+
+.project-card .btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.project-card .btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.project-card .btn-linkedin {
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.project-card .btn-linkedin:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .projects-hd {
+        font-size: 2.2rem;
+    }
+    .project-card .card-title {
+        font-size: 1.5rem;
+    }
+    .project-card .card-text {
+        font-size: 0.9rem;
+    }
+}
+/* Contact Me Section */
+
+#contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form {
+    
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* Contact Me Section */
+#contact {
+  
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+#contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    animation: slideInDown 1s ease-in-out;
+}
+
+/* Contact Heading with Hover Effect */
+.contact-heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-heading:hover {
+    transform: scale(1.1);
+    color: #3498db;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input with Border Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Button with hover and animation */
+.contact-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.site-footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+/* Ensure sections and images take up full width without overflowing */
+#home, img, .container, .project-card {
+    max-width: 100%;
+    box-sizing: border-box; /* Make sure padding doesn't add to element width */
+}
+
+/* You may also apply box-sizing globally */
+* {
+    box-sizing: border-box;
+}
+@keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-heading {
+    animation: fadeInSlideUp 2s ease-out forwards;
+  }
+  
+  .animate-heading-delay {
+    animation: fadeInSlideUp 2s ease-out forwards;
+    animation-delay: 0.5s; /* Adds a slight delay for h3 */
+  }
+  
